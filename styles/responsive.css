@@ -1,14 +1,37 @@
 /* responsive.css */
 /* desktop 1250 ~ 1920 */
+/* tablet 1249 ~ 850 */
 @media screen and (max-width:1249px) {
     #wrap .intro {padding:0 80px;}
     #wrap .intro .container {width: 100%;}
     #wrap .intro .container h1:nth-child(2) {font-size: 3.125rem;}
     #wrap .intro .container .sponsor_btn {width: 270px; line-height: 62px; font-size: 1.375rem;}
     #wrap .intro .container .sponsor_question {width: 333px; height: 54px; font-size:1.25rem;}
-}
-/* tablet 1249 ~ 850 */
-@media screen and (max-width:849px) {
-    #wrap .intro .container h1:nth-child(2) {font-size: 1.875rem;}
+    /* =============================2행 퀴즈 */
+    #wrap .quiz {padding:150px 80px;}
+    /* ===============================3행 비디오 */
+    #wrap .ad .container h2 {font-size: 2.5rem;}
+    #wrap .ad .container {padding:200px 80px;}
+    #wrap .ad .container .sponser_btn {
+        font-size: 1.375rem;
+        width: 270px;
+        line-height: 62px;
 }
 /* mobile 849 ~ 320 */
+@media screen and (max-width:849px) {
+    #wrap .into {padding:0 15px;}
+    #wrap .intro .container h1:nth-child(2) {font-size: 1.875rem;}
+    /* =============================2행 퀴즈 */
+    #wrap .quiz {padding:70px 15px;}
+    #wrap .quiz .container {
+        display: grid;
+        grid-template-columns:1fr;
+    }
+    #wrap .quiz .container #right_wrap {text-align: center;}
+    #wrap .quiz .container #right_wrap p:nth-child(1) img {width: 80%;}
+    /* ====================3행 */
+    /* ===============================3행 비디오 */
+    #wrap .ad .container h2 {font-size: 1.375rem;}
+    #wrap .ad .container {padding:50px 15px;}
+    #wrap .ad .container iframe {height: 400px;}
+}
