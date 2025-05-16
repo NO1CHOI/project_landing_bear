@@ -16,6 +16,9 @@
         font-size: 1.375rem;
         width: 270px;
         line-height: 62px;
+    }
+    /* =======================5행 */
+    #wrap .disaster {padding:200px 80px;}
 }
 /* mobile 849 ~ 320 */
 @media screen and (max-width:849px) {
@@ -29,9 +32,33 @@
     }
     #wrap .quiz .container #right_wrap {text-align: center;}
     #wrap .quiz .container #right_wrap p:nth-child(1) img {width: 80%;}
-    /* ====================3행 */
     /* ===============================3행 비디오 */
+    #wrap .ad {
+        width: 100%; /*  height: 100vh; */
+        padding:0;
+    }
     #wrap .ad .container h2 {font-size: 1.375rem;}
     #wrap .ad .container {padding:50px 15px;}
     #wrap .ad .container iframe {height: 400px;}
+    /* 4행 */
+    #wrap .ice {padding:60px 15px;}
+    #wrap .ice .container h2 {font-size: 1.375rem;}
+    #wrap .ice .container p:nth-child(2) {font-size: 0.813rem;padding:22px 0;}
+    #wrap .ice .container p:nth-child(3) {
+        width: 100%;
+        background-color: yellow;
+    }
+    #wrap .ice .container p:nth-child(3) img {width:200%;transform: translateX(-25%);}
+    /* 5행 */
+    #wrap .disaster {padding:70px 15px;}
+    #wrap .disaster .container h2 {font-size: 1.375rem;}
+    #wrap .disaster .container > p {font-size: 0.813rem;}
+    #wrap .disaster .container .list {
+        flex-flow: column nowrap; gap:20px;
+    }
+    #wrap .disaster .container .list li .bg {height: 150px;}
+    #wrap .disaster .container .list li .bg h3 {font-size: 1.375rem;}
+    #wrap .disaster .container .list li .bg p {font-size: 1rem;}
+    #wrap .disaster .container .list li  {width: 100%;}
+    #wrap .disaster .container .list li > p {height:max-content;}
 }
